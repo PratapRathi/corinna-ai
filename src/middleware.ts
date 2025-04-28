@@ -1,6 +1,6 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const routeMatcher = createRouteMatcher(["/", "/auth(.*)", "/portal(.*)"]);
+const routeMatcher = createRouteMatcher(["/", "/auth(.*)", "/portal(.*)", "/images(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
   if (!routeMatcher(req)) await auth.protect();
