@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @import "tailwindcss/utilities";
 
 @theme {
@@ -131,21 +130,8 @@
   }
 }
 
-img {
-  max-width: none;
-}
-
 body {
   background: transparent;
-}
-
-.chat-window::-webkit-scrollbar {
-  display: none;
-}
-
-.chat-window {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .chat-bubble {
@@ -212,4 +198,17 @@ body {
 .parsed-container img {
   width: 100% !important;
   border-radius: 20px;
+}
+
+img {
+  max-width: none;
+}
+
+.chat-window::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
